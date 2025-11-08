@@ -248,5 +248,25 @@
       card.addEventListener('mouseleave', ()=> card.style.transform = 'rotateX(0) rotateY(0)');
     });
   </script>
+  <!-- 🌈 Theme Toggle Script -->
+<script>
+  const themeToggle = document.getElementById('theme-toggle');
+  const body = document.body;
+
+  // Load saved theme
+  const currentTheme = localStorage.getItem('theme');
+  if (currentTheme === 'light') {
+    body.classList.add('light');
+    themeToggle.textContent = '☀️';
+  }
+
+  themeToggle.addEventListener('click', () => {
+    body.classList.toggle('light');
+    const theme = body.classList.contains('light') ? 'light' : 'dark';
+    themeToggle.textContent = theme === 'light' ? '☀️' : '🌙';
+    localStorage.setItem('theme', theme);
+  });
+</script>
+  
 </body>
 </html>
