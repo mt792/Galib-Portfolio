@@ -347,12 +347,12 @@ footer {
   }
 }
 
-/* 🎨 Social Media Section */
+/* 🎨 Social Media Section - Themed Blue Glow */
 .social-section {
   background: #0f0f0f;
   padding: 50px 0 40px;
   text-align: center;
-  border-top: 1px solid rgba(255,255,255,0.1);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 .social-section h2 {
@@ -365,58 +365,54 @@ footer {
 .social-icons {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 22px;
   flex-wrap: wrap;
 }
 
-/* Individual icon */
+/* Icon wrapper */
 .social-icons a {
   background: #1a1a1a;
-  width: 55px;
-  height: 55px;
+  width: 60px;
+  height: 60px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  box-shadow: 0 0 10px rgba(0, 196, 255, 0.15);
   transition: all 0.3s ease;
-  box-shadow: 0 0 10px rgba(0, 196, 255, 0.1);
 }
 
 /* Icons themselves */
 .social-icons img {
-  width: 28px;
-  height: 28px;
-  filter: brightness(0) invert(1);
-  transition: transform 0.3s ease;
+  width: 30px;
+  height: 30px;
+  filter: invert(70%) sepia(80%) saturate(3000%) hue-rotate(160deg) brightness(100%) contrast(95%);
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-/* Hover glow by brand */
+/* Hover effects (unified to theme) */
+.social-icons a:hover {
+  background: #00c4ff;
+  box-shadow: 0 0 20px rgba(0, 196, 255, 0.6);
+  transform: scale(1.12);
+}
+
 .social-icons a:hover img {
-  transform: scale(1.1);
+  filter: brightness(0) invert(1);
+  transform: rotate(8deg);
 }
 
-.social-icons a.instagram:hover {
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
-  box-shadow: 0 0 15px rgba(221, 42, 123, 0.5);
-}
-
-.social-icons a.pinterest:hover {
-  background: #E60023;
-  box-shadow: 0 0 15px rgba(230, 0, 35, 0.5);
-}
-
-.social-icons a.behance:hover {
-  background: #0057ff;
-  box-shadow: 0 0 15px rgba(0, 87, 255, 0.5);
-}
-
-.social-icons a.telegram:hover {
-  background: #229ED9;
-  box-shadow: 0 0 15px rgba(34, 158, 217, 0.5);
-}
-
-.social-icons a.dribbble:hover {
-  background: #ea4c89;
-  box-shadow: 0 0 15px rgba(234, 76, 137, 0.5);
-}
-
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .social-icons {
+    gap: 18px;
+  }
+  .social-icons a {
+    width: 50px;
+    height: 50px;
+  }
+  .social-icons img {
+    width: 26px;
+    height: 26px;
+  }
+  }
