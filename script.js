@@ -3,14 +3,14 @@ const menu = document.getElementById("menu");
 const navList = document.getElementById("nav-list");
 menu.addEventListener("click", () => navList.classList.toggle("show"));
 
-// Scroll fade-in
+// Fade-in on scroll
 const observer = new IntersectionObserver(
   (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
   { threshold: 0.2 }
 );
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
-// Tilt animation
+// Tilt motion
 document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
