@@ -346,3 +346,77 @@ footer {
     box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
   }
 }
+
+/* 🎨 Social Media Section */
+.social-section {
+  background: #0f0f0f;
+  padding: 50px 0 40px;
+  text-align: center;
+  border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-section h2 {
+  color: #00c4ff;
+  font-size: 1.6rem;
+  margin-bottom: 25px;
+}
+
+/* Social icon container */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Individual icon */
+.social-icons a {
+  background: #1a1a1a;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px rgba(0, 196, 255, 0.1);
+}
+
+/* Icons themselves */
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+  transition: transform 0.3s ease;
+}
+
+/* Hover glow by brand */
+.social-icons a:hover img {
+  transform: scale(1.1);
+}
+
+.social-icons a.instagram:hover {
+  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+  box-shadow: 0 0 15px rgba(221, 42, 123, 0.5);
+}
+
+.social-icons a.pinterest:hover {
+  background: #E60023;
+  box-shadow: 0 0 15px rgba(230, 0, 35, 0.5);
+}
+
+.social-icons a.behance:hover {
+  background: #0057ff;
+  box-shadow: 0 0 15px rgba(0, 87, 255, 0.5);
+}
+
+.social-icons a.telegram:hover {
+  background: #229ED9;
+  box-shadow: 0 0 15px rgba(34, 158, 217, 0.5);
+}
+
+.social-icons a.dribbble:hover {
+  background: #ea4c89;
+  box-shadow: 0 0 15px rgba(234, 76, 137, 0.5);
+}
+
