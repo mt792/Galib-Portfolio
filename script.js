@@ -1,4 +1,4 @@
-// Navigation Menu
+// Responsive Menu
 const menu = document.getElementById("menu");
 const navList = document.getElementById("nav-list");
 menu.addEventListener("click", () => navList.classList.toggle("show"));
@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
-// Tilt Hover
+// Card Tilt
 document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
@@ -21,7 +21,7 @@ document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mouseleave", () => (card.style.transform = "rotateX(0) rotateY(0)"));
 });
 
-// Dark/Light Mode
+// Theme Toggle
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 if (localStorage.getItem("theme") === "dark") {
