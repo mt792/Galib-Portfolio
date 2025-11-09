@@ -10,7 +10,7 @@ const observer = new IntersectionObserver(
 );
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
-// Card Tilt
+// Card Tilt Effect
 document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
