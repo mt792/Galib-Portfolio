@@ -1,16 +1,13 @@
-// Responsive Menu
 const menu = document.getElementById("menu");
 const navList = document.getElementById("nav-list");
 menu.addEventListener("click", () => navList.classList.toggle("show"));
 
-// Scroll Animation
 const observer = new IntersectionObserver(
   (entries) => entries.forEach((e) => e.isIntersecting && e.target.classList.add("visible")),
   { threshold: 0.2 }
 );
 document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
 
-// Card Tilt Effect
 document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mousemove", (e) => {
     const rect = card.getBoundingClientRect();
@@ -21,7 +18,6 @@ document.querySelectorAll(".tilt").forEach((card) => {
   card.addEventListener("mouseleave", () => (card.style.transform = "rotateX(0) rotateY(0)"));
 });
 
-// Theme Toggle
 const themeToggle = document.getElementById("theme-toggle");
 const body = document.body;
 if (localStorage.getItem("theme") === "dark") {
