@@ -1,238 +1,283 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Muhammed Galib — Premium Portfolio</title>
-
-  <!-- Styles -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammed Galib | Graphic Designer</title>
   <link rel="stylesheet" href="style.css" />
-
-  <!-- Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
 </head>
+
 <body class="light">
 
-  <!-- Animated Gradient Background -->
-  <div class="animated-bg"></div>
+  <!-- ================= HEADER ================= -->
+  <header>
+    <div class="container nav-wrap">
+      <div class="brand">MG</div>
 
-  <!-- HEADER -->
-  <header class="site-header glass">
-    <div class="container header-row">
-      <div class="brand">Muhammed <span>Galib</span></div>
-
-      <nav class="main-nav">
-        <ul id="nav-list" class="nav-list">
+      <nav>
+        <ul id="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#portfolio">Work</a></li>
+          <li><a href="#resume">Resume</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
 
-      <div class="header-controls">
-        <button id="theme-toggle" class="icon-btn">🌙</button>
-        <button id="menu-toggle" class="icon-btn menu-btn">≡</button>
-      </div>
+      <button id="theme-toggle" class="theme-toggle">🌙</button>
+      <button id="menu" class="menu">☰</button>
     </div>
   </header>
 
-  <!-- HERO -->
-  <section id="home" class="hero section fade-in">
 
-    <!-- 3D Parallax Layers -->
-    <div class="parallax" aria-hidden="true">
-      <div class="p-layer layer1"></div>
-      <div class="p-layer layer2"></div>
-      <div class="p-layer layer3"></div>
-      <div class="p-layer layer4"></div>
-    </div>
+
+  <!-- ================= HERO ================= -->
+  <section id="home" class="hero section fade-in">
+    <div class="aurora-bg"></div>
 
     <div class="container hero-grid">
+      <div class="hero-text">
+        <p class="eyebrow">Hi, I’m</p>
 
-      <!-- Left content -->
-      <div class="hero-content">
-        <p class="hero-hi">Hello! I'm</p>
-        <h1 class="hero-title">Muhammed <span>Galib</span></h1>
-        <p class="hero-role">Creative Graphic Designer 🎨</p>
+        <h1>Muhammed <span>Galib</span></h1>
 
-        <p class="hero-copy">
-          I design brand identities, UI/UX, posters, and digital visuals that tell clear, memorable stories.
+        <h2 class="subtitle">Graphic Designer</h2>
+
+        <p class="lead">
+          A passionate visual creator turning ideas into meaningful, colorful designs —
+          from brand identities to modern digital art.
         </p>
 
-        <div class="hero-buttons">
-          <a class="btn primary magnetic" href="cv.pdf" download><span>⬇ Download CV</span></a>
-          <a class="btn outline magnetic" href="#portfolio"><span>View Portfolio</span></a>
-          <a class="btn outline magnetic" href="projects.html"><span>Open Projects Dashboard</span></a>
+        <div class="cta">
+          <a href="cv.pdf" class="btn primary" download>⬇ Download CV</a>
+          <a href="#portfolio" class="btn ghost">View My Work</a>
         </div>
 
-        <div class="social-links">
-          <a href="https://instagram.com/muhammedgalib_" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram"></a>
-          <a href="https://pinterest.com/muhammedgalib_" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pinterest.svg" alt="Pinterest"></a>
-          <a href="https://www.behance.net/muhammedgalib_" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/behance.svg" alt="Behance"></a>
-          <a href="https://t.me/muhammedgalib" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram"></a>
-          <a href="https://dribbble.com/muhammedgalib" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/dribbble.svg" alt="Dribbble"></a>
+        <div class="hero-social">
+          <a href="https://instagram.com/muhammedgalib_" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg">
+          </a>
+
+          <a href="https://pinterest.com/muhammedgalib_" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/pinterest.svg">
+          </a>
+
+          <a href="https://www.behance.net/muhammedgalib_" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/behance.svg">
+          </a>
+
+          <a href="https://t.me/muhammedgalib" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg">
+          </a>
+
+          <a href="https://dribbble.com/muhammedgalib" target="_blank">
+            <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/dribbble.svg">
+          </a>
         </div>
+
       </div>
 
-      <!-- Profile image (parallax + animated gradient ring) -->
-      <div class="hero-image tilt">
-        <div class="avatar-wrap premium-ring parallax-profile" role="img" aria-label="Profile image">
-          <img src="profile.png" class="avatar" alt="Muhammed Galib">
-        </div>
+      <div class="hero-art tilt">
+        <img src="profile.jpg" class="avatar" alt="Muhammed Galib">
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
+
+
+  <!-- ================= ABOUT ================= -->
   <section id="about" class="section fade-in">
     <div class="container about-grid">
-      <div class="about-img-frame tilt">
-        <img src="profile.png" alt="About Image">
+
+      <div class="about-img tilt">
+        <img src="profile.jpg" alt="Muhammed Galib portrait">
       </div>
 
-      <div class="about-text glass">
-        <h2 class="section-title">About Me</h2>
+      <div class="about-text">
+        <h3 class="section-title">About Me</h3>
+
         <p>
-          I bring creativity and strategy together to craft brand systems, posters, UI/UX interfaces and digital campaigns.
-          I focus on clarity, consistency and visual storytelling.
+          I’m a designer who loves colors, stories, and emotions.
+          Every project I do aims to communicate clarity and creativity.
+          I specialize in creating strong, memorable visuals that connect with audiences.
         </p>
+
+        <div class="about-badges">
+          <span>Branding</span>
+          <span>UI/UX</span>
+          <span>Motion Design</span>
+          <span>Creative Direction</span>
+        </div>
       </div>
+
     </div>
   </section>
 
-  <!-- SKILLS -->
-  <section id="skills" class="section slide-up">
+
+
+  <!-- ================= SKILLS ================= -->
+  <section id="skills" class="section fade-in">
     <div class="container">
-      <h2 class="section-title">Skills</h2>
+
+      <h3 class="section-title">Skills</h3>
 
       <div class="skills-grid">
-        <div class="skill glass tilt">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobephotoshop.svg" alt="">
+
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobephotoshop.svg">
           <span>Photoshop</span>
         </div>
 
-        <div class="skill glass tilt">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobeillustrator.svg" alt="">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobeillustrator.svg">
           <span>Illustrator</span>
         </div>
 
-        <div class="skill glass tilt">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobepremierepro.svg" alt="">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobepremierepro.svg">
           <span>Premiere Pro</span>
         </div>
 
-        <div class="skill glass tilt">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/figma.svg" alt="">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/figma.svg">
           <span>UI/UX Design</span>
         </div>
 
-        <div class="skill glass tilt">
-          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobecreativecloud.svg" alt="">
+        <div class="skill">
+          <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/adobecreativecloud.svg">
           <span>Branding</span>
         </div>
+
       </div>
+
     </div>
   </section>
 
-  <!-- PORTFOLIO (Premium thumbnails that open gallery) -->
+
+
+  <!-- ================= PORTFOLIO ================= -->
   <section id="portfolio" class="section fade-in">
     <div class="container">
-      <h2 class="section-title">Portfolio</h2>
 
-      <div class="portfolio-dashboard-head">
-        <p>Selected works — click to open gallery</p>
-        <a class="btn primary magnetic" href="projects.html"><span>Open Projects Dashboard →</span></a>
+      <h3 class="section-title">My Projects</h3>
+
+      <div class="portfolio-grid">
+
+        <div class="card tilt">
+          <img src="project1.jpg">
+          <div class="card-info">
+            <h4>Brand Identity</h4>
+            <p>Logo & System Design</p>
+          </div>
+        </div>
+
+        <div class="card tilt">
+          <img src="project2.jpg">
+          <div class="card-info">
+            <h4>Poster Series</h4>
+            <p>Creative Layout</p>
+          </div>
+        </div>
+
+        <div class="card tilt">
+          <img src="project3.jpg">
+          <div class="card-info">
+            <h4>UI Design</h4>
+            <p>Modern Interface</p>
+          </div>
+        </div>
+
+        <div class="card tilt">
+          <img src="project4.jpg">
+          <div class="card-info">
+            <h4>Packaging</h4>
+            <p>Conceptual Art</p>
+          </div>
+        </div>
+
       </div>
 
-      <div class="portfolio-premium-grid">
-        <!-- Buttons trigger gallery by data-gallery key -->
-        <button class="portfolio-thumb" data-gallery="project1" aria-label="Open gallery project1">
-          <div class="thumb-img"><img src="project1.jpg" alt="Project 1"></div>
-          <div class="thumb-info"><h3>Brand Identity Design</h3><span class="tag branding">Branding</span></div>
-        </button>
-
-        <button class="portfolio-thumb" data-gallery="project2" aria-label="Open gallery project2">
-          <div class="thumb-img"><img src="project2.jpg" alt="Project 2"></div>
-          <div class="thumb-info"><h3>Seminar Poster</h3><span class="tag poster">Poster</span></div>
-        </button>
-
-        <!-- Add more thumbnails as needed, matching gallery keys in script.js -->
-      </div>
     </div>
   </section>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section slide-up">
+
+
+  <!-- ================= RESUME ================= -->
+  <section id="resume" class="section fade-in">
     <div class="container">
-      <h2 class="section-title">Let's Talk</h2>
-      <p class="muted">Message me on WhatsApp or send an email.</p>
+
+      <h3 class="section-title">Resume</h3>
+
+      <div class="timeline">
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>Freelance Designer</h4>
+            <p class="muted">2020 – Present</p>
+            <p>Delivering creative solutions for global clients in branding, print, and UI design.</p>
+          </div>
+        </div>
+
+        <div class="t-item">
+          <div class="t-dot"></div>
+          <div class="t-body">
+            <h4>B.A. Visual Communication</h4>
+            <p class="muted">2016 – 2019</p>
+            <p>Learned design foundations, storytelling, and color psychology.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="resume-cta">
+        <a href="cv.pdf" class="btn primary" download>⬇ Download CV</a>
+        <a href="mailto:muhammedgalib792@gmail.com" class="btn ghost">Email Me</a>
+      </div>
+
+    </div>
+  </section>
+
+
+
+  <!-- ================= CONTACT ================= -->
+  <section id="contact" class="section fade-in">
+    <div class="container">
+
+      <h3 class="section-title">Contact</h3>
+
+      <p class="contact-lead">
+        Let’s collaborate and create something amazing!
+        Contact me via WhatsApp or Email.
+      </p>
 
       <div class="contact-actions">
-        <a class="btn primary magnetic" href="https://wa.me/918089539792" target="_blank" rel="noopener"><span>WhatsApp</span></a>
-        <a class="btn outline magnetic" href="mailto:muhammedgalib792@gmail.com"><span>Email Me</span></a>
+        <a href="https://wa.me/918089539792" class="btn primary" target="_blank">Chat on WhatsApp</a>
+        <a href="mailto:muhammedgalib792@gmail.com" class="btn ghost">muhammedgalib792@gmail.com</a>
       </div>
+
     </div>
   </section>
 
-  <!-- PREMIUM FOOTER -->
-  <footer class="premium-footer">
-    <div class="footer-glow" aria-hidden="true"></div>
 
-    <div class="container footer-grid">
-      <div class="footer-about">
-        <h3>Muhammed <span>Galib</span></h3>
-        <p>Graphic Designer — Branding, UI/UX, Posters, Digital Art.</p>
-      </div>
 
-      <div class="footer-links">
-        <a href="#home">Home</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">Contact</a>
-      </div>
-
-      <div class="footer-social">
-        <a href="https://instagram.com/muhammedgalib_" target="_blank" rel="noopener">Instagram</a>
-        <a href="https://dribbble.com/muhammedgalib" target="_blank" rel="noopener">Dribbble</a>
-        <a href="https://www.behance.net/muhammedgalib_" target="_blank" rel="noopener">Behance</a>
-      </div>
-    </div>
-
-    <p class="footer-copy">© 2025 Muhammed Galib — All rights reserved.</p>
+  <!-- ================= FOOTER ================= -->
+  <footer>
+    <p>© 2025 Muhammed Galib. All Rights Reserved.</p>
   </footer>
 
-  <!-- WHATSAPP FAB -->
-  <a class="fab" href="https://wa.me/918089539792" target="_blank" rel="noopener" aria-label="WhatsApp">
-    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+
+
+  <!-- ================= FLOATING WHATSAPP BUTTON ================= -->
+  <a href="https://wa.me/918089539792" class="whatsapp-float" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" class="whatsapp-icon">
   </a>
 
-  <!-- MODAL / GALLERY -->
-  <div id="media-modal" class="media-modal" aria-hidden="true">
-    <div class="backdrop"></div>
 
-    <div class="modal-box gallery-box">
-      <div class="gallery-top-bar">
-        <button id="modal-close" class="close-btn" aria-label="Close">✕</button>
-        <button id="fullscreen-btn" class="fullscreen-btn" aria-label="Toggle fullscreen">⛶</button>
-      </div>
 
-      <button id="gallery-prev" class="gallery-arrow left" aria-label="Previous">❮</button>
-
-      <div id="zoom-container">
-        <img id="modal-image" alt="Project image">
-      </div>
-
-      <button id="gallery-next" class="gallery-arrow right" aria-label="Next">❯</button>
-
-      <p id="image-caption" class="image-caption" aria-live="polite"></p>
-
-      <div id="thumb-strip" class="thumb-strip" role="listbox" aria-label="Thumbnails"></div>
-    </div>
-  </div>
-
-  <!-- Scripts -->
+  <!-- ================= SCRIPT ================= -->
   <script src="script.js"></script>
+
 </body>
-</html>
+      </html>
