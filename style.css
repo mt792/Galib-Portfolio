@@ -245,7 +245,7 @@ body.light .hero-social img {
   filter: none;
 }
 
-/* ---------- ABOUT ---------- */
+/* ---------- ABOUT SECTION ---------- */
 .about-grid {
   display: grid;
   grid-template-columns: 0.9fr 1.1fr;
@@ -396,7 +396,7 @@ body.light .skill img {
   color: var(--muted);
 }
 
-/* ---------- CONTACT ---------- */
+/* ---------- CONTACT SECTION ---------- */
 .contact-lead {
   text-align: center;
   color: var(--muted);
@@ -430,6 +430,7 @@ footer {
   justify-content: center;
   align-items: center;
   box-shadow: 0 8px 26px rgba(0,0,0,0.3);
+  z-index: 999;
 }
 
 .whatsapp-icon {
@@ -468,10 +469,12 @@ footer {
 
 /* ---------- RESPONSIVE ---------- */
 @media (max-width: 900px) {
+
   .hero-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
+
   nav ul {
     display: none;
     flex-direction: column;
@@ -483,14 +486,17 @@ footer {
     top: 60px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.15);
   }
+
   nav ul.show {
     display: flex;
   }
+
   .menu {
     display: block;
   }
+
   .about-grid {
     grid-template-columns: 1fr;
     text-align: center;
   }
-   }
+}
