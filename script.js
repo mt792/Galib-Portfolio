@@ -52,39 +52,3 @@ document.querySelectorAll(".project").forEach(item=>{
 
 closeBtn.addEventListener("click",()=>modal.style.display="none");
 modal.addEventListener("click",(e)=>{ if(e.target === modal) modal.style.display="none"; });
-
-/* ---------- POPUP MODAL ---------- */
-.modal{
-  display:none;
-  position:fixed;
-  inset:0;
-  background:rgba(0,0,0,0.85);
-  justify-content:center;
-  align-items:center;
-  z-index:2000;
-  backdrop-filter:blur(6px);
-}
-.modal-content{
-  max-width:90%;
-  max-height:85%;
-  border-radius:14px;
-  box-shadow:0 0 40px rgba(0,0,0,.5);
-  animation:zoomIn .4s ease;
-}
-@keyframes zoomIn{
-  from{transform:scale(.6);opacity:0}
-  to{transform:scale(1);opacity:1}
-}
-.close-btn{
-  position:absolute;
-  top:20px;
-  right:30px;
-  font-size:40px;
-  color:white;
-  cursor:pointer;
-  font-weight:600;
-  transition:.3s;
-}
-.close-btn:hover{
-  color:var(--highlight);
-}
